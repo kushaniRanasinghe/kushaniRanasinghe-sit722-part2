@@ -18,12 +18,12 @@ spec:
       - name: book_catalog
         image: book_catalog:latest
         ports:
-        - containerPort: 3010
+        - containerPort: 4000
         env:
         - name: NODE_ENV
           value: "production"
         - name: DATABASE_URL
-          value: "postgresql://postgresql://sit722_kush_z2sq_user:JxC5xvGeM5gYT592LgylJTHTTjJFn28S@dpg-cr3dpmqj1k6c73dkpdqg-a.oregon-postgres.render.com/sit722_kush_z2sq"
+          value: "postgresql://[your_connection_string]"
         imagePullPolicy: IfNotPresent
 ---
 apiVersion: v1
@@ -36,5 +36,5 @@ spec:
   ports:
   - protocol: TCP
     port: 8081
-    targetPort: 3010
+    targetPort: 4000
   type: ClusterIP
