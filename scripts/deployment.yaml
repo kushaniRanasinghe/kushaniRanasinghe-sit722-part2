@@ -24,7 +24,7 @@ spec:
         - name: NODE_ENV
           value: "production"
         - name: DATABASE_URL
-          value: "postgresql://postgresql://sit722_kush_z2sq_user:JxC5xvGeM5gYT592LgylJTHTTjJFn28S@dpg-cr3dpmqj1k6c73dkpdqg-a.oregon-postgres.render.com/sit722_kush_z2sq"
+          value: "postgresql://sit722_kush_z2sq_user:JxC5xvGeM5gYT592LgylJTHTTjJFn28S@dpg-cr3dpmqj1k6c73dkpdqg-a.oregon-postgres.render.com/sit722_kush_z2sq"
         imagePullPolicy: IfNotPresent
 apiVersion: v1
 kind: Service
