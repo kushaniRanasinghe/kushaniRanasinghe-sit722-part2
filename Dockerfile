@@ -1,15 +1,20 @@
-# Use the official Python image from the Docker Hub
+# Use the Python 3.11 image based on Alpine Linux
 FROM python:3.11-alpine
 
+# Set the working directory
 WORKDIR /usr/src/app
 
+# Copy the requirements file
 COPY book_catalog/requirements.txt ./
+
+# Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Copy the application files
 COPY book_catalog/ ./
 
-# Expose the port the FastAPI application will run on
+# Expose port 3010
 EXPOSE 3010
 
-# Run the FastAPI application
+# Start the FastAPI app
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "3010"]
