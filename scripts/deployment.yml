@@ -18,7 +18,7 @@ spec:
       - name: book_catalog
         image: book_catalog:latest
         ports:
-        - containerPort: 4000
+        - containerPort: 3010  # Change to 3010
         env:
         - name: NODE_ENV
           value: "production"
@@ -36,5 +36,5 @@ spec:
   ports:
   - protocol: TCP
     port: 8081
-    targetPort: 4000
+    targetPort: 3010 
   type: ClusterIP
