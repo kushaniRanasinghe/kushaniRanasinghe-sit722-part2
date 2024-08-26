@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY book_catalog/ ./
 
 # Expose the port the application runs on
-EXPOSE 3000
+EXPOSE 3010
 
 # Command to run the application
 CMD ["python", "main.py"]
