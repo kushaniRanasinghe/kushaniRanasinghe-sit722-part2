@@ -18,7 +18,7 @@ spec:
       - name: book_catalog
         image: book_catalog:latest
         ports:
-        - containerPort: 3010  # Change to 3010
+        - containerPort: 3010
         env:
         - name: NODE_ENV
           value: "production"
