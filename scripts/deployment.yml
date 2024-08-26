@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: book-catalog
-        image: book_catalog:latest # Replace with your Docker Hub image if pushing to a registry
+        image: book-catalog:latest
         ports:
         - containerPort: 3000
         env:
