@@ -19,7 +19,7 @@ spec:
         imagePullPolicy: IfNotPresent
         env:
         - name: DATABASE_URL
-          value: "postgresql://sit722_kush_z2sq_user:JxC5xvGeM5gYT592LgylJTHTTjJFn28S@dpg-cr3dpmqj1k6c73dkpdqg-a.oregon-postgres.render.com/sit722_kush_z2sq"
+          value: "postgresql://kushani_sit722_part2_user:AApi5fV4OnUT7oCFiNac3DYf4XbvJ40C@dpg-cr7hs2aj1k6c739snkp0-a.oregon-postgres.render.com/kushani_sit722_part2"
         ports:
         - containerPort: 80
 apiVersion: v1
